@@ -65,10 +65,9 @@ public class credentialAccess extends HttpServlet {
 
         if (request.getParameter("usern") != null && request.getParameter("upass") != null) {
 
-            if (request.getParameter("usern").equals("Administator")) {
-                 System.out.println("Get Method in use...");
+            if (request.getParameter("usern").equals("testuser")) {
 
-                if (request.getParameter("upass").equals("qwerty")) {
+                if (request.getParameter("upass").equals("testpass123")) {
                      System.out.println("Get Method in use...");
 
                     Logger.getLogger(credentialAccess.class.getName()).log(Level.INFO, "User Logged in was successful: ADMINISTRATOR");

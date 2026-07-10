@@ -8,7 +8,7 @@ if(session.getAttribute("xloggedx") == null || session.getAttribute("xloggedx") 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title>SORMAS ADAPTER | Location Dashboard</title>
+        <title>SODIT | Location Dashboard</title>
         
 
   <link href="./mira_assets/css/hover.css" rel="stylesheet" type="text/css" media="all"/>

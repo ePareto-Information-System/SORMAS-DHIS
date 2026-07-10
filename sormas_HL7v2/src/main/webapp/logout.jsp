@@ -1,6 +1,4 @@
-
 <%
     session.invalidate();
-    request.getSession();
-    response.sendRedirect(request.getContextPath());
+    response.sendRedirect(request.getContextPath() + "/fhir_frontend/lockpage.jsp");
 %>

@@ -4,7 +4,6 @@
 <%@page import="com.mirabilia.org.hzi.sormas.cases.AggregrateController"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%@page import="org.json.simple.parser.JSONParser"%>
-<%@page import="sun.misc.IOUtils"%>
 <%@page import="java.io.InputStream"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="com.mirabilia.org.hzi.Util.dhis.optionFiler"%>
@@ -299,7 +298,7 @@
 
 
                                         <div class="callout" style="display: none;" id="2_stepx">
-                                            <h5>What will you like to publish to DHIS2 Server from the SORMAS System?</h5>
+                                            <h5>What will you like to publish to DHIS2 Server from the SODIT System?</h5>
 
                                             <p>Please select all that applies</p>
                                             <div class="row">
@@ -466,7 +465,7 @@
 
 
                                         <div class="callout" style="display: none;" id="2_2_2_2_stepx">
-                                            <h5>Can I do ahead and install SORMAS Module on you DHIS2?</h5>
+                                            <h5>Can I do ahead and install SODIT Module on you DHIS2?</h5>
 
                                             <p>You will meed to provide an administrator username and password of the DHIS2 server</p>
                                             <div class="col s6">

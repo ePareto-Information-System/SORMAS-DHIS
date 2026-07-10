@@ -64,7 +64,7 @@
                                         <ul class="todo-list" data-widget="todo-list">
 <li>
                                          
-    <span class="text"><i>Note that SORMAS running on the localhost will automatically be selected as the Destination Server</i></span></small>
+    <span class="text"><i>Note that SODIT running on the localhost will automatically be selected as the Destination Server</i></span></small>
                                             <div class="tools"></div><hr>
 </li>
                                         </ul>

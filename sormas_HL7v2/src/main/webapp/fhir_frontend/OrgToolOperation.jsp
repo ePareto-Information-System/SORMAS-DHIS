@@ -190,7 +190,7 @@
                     </section>
 
                     <div id="overlay" onclick="off()">
-                        <div id="text"><h3 style="padding-left:100px;">please wait... configuring SORMAS</h3>
+                        <div id="text"><h3 style="padding-left:100px;">please wait... configuring SODIT</h3>
                         </div></div>
 
 
@@ -239,7 +239,7 @@
                                                             Perform maintenance
                                                             <input type="checkbox" <%//rx.getString(2)%> name="server" id="maintenance">
                                                             <span class="lever"></span>
-                                                            Setup on New SORMAS Server
+                                                            Setup on New SODIT Server
                                                         </label>
                                                     </div>
 
@@ -284,7 +284,7 @@
 
 
                                             <a onclick="start_pushX_X()" id="send_all_availx" class="btn btn-app hvr-icon-buzz-out">
-                                                <i class="fas fa-play hvr-icon"></i> Sync with NEW SORMAS
+                                                <i class="fas fa-play hvr-icon"></i> Sync with NEW SODIT
                                             </a>
 
 
@@ -322,7 +322,7 @@
                                                     <span class="info-box-icon"><i class="far fa-check"></i></span>
 
                                                     <div class="info-box-content">
-                                                        <span class="info-box-text">Storing @ SORMAS Server</span>
+                                                        <span class="info-box-text">Storing @ SODIT Server</span>
                                                         <span class="info-box-number" id="totaler_x"></span>
 
                                                         <div class="progress">
@@ -413,7 +413,7 @@
                                             </a>
 
                                             <a onclick="start_pushX_()" id="send_all_avail" class="btn btn-app hvr-icon-buzz-out">
-                                                <i class="fas fa-play hvr-icon"></i> Sync with SORMAS
+                                                <i class="fas fa-play hvr-icon"></i> Sync with SODIT
                                             </a>
 
 
@@ -480,7 +480,7 @@
                                     <div class="card card-success card-outline" id="body_wx">
                                         <div class="card-header">
 
-                                            <h3 class="card-title" data-togg="tooltip" title="NOTE: This is using local SORMAS Server as a baseline">
+                                            <h3 class="card-title" data-togg="tooltip" title="NOTE: This is using local SODIT Server as a baseline">
                                                 <i class="fas fa-search"></i>
                                                 Infrastructure Match Results
                                             </h3>
@@ -1135,7 +1135,7 @@
                                                                             <th>SN</th>
                                                                             <th>SOMRAS UUID</th>
                                                                             <th>SOURCE UUID</th>
-                                                                            <th>SORMAS NAME</th>
+                                                                            <th>SODIT NAME</th>
                                                                             <th>SOURCE NAME</th>
                                                                             <th>LAST MATCHED</th>
                                                                         </tr>
@@ -1428,7 +1428,7 @@
                                                                         <tr>
                                                                             <th>SN</th>
                                                                             <th>SOMRAS UUID</th>
-                                                                            <th>SORMAS NAME</th>
+                                                                            <th>SODIT NAME</th>
                                                                             <th>DUPLICATE WITH</th>
                                                                             <th>DUPLICATE UUID</th>
                                                                             <th>SOURCE CURRENTLY MATCHED</th>
@@ -1709,7 +1709,7 @@
                                                                         <tr>
                                                                             <th>SN</th>
                                                                             <th>SOMRAS UUID</th>
-                                                                            <th>SORMAS NAME</th>
+                                                                            <th>SODIT NAME</th>
                                                                             <th>DUPLICATE WITH</th>
                                                                             <th>DUPLICATE UUID</th>
                                                                             <th>SOURCE CURRENTLY MATCHED</th>
@@ -1834,7 +1834,7 @@
                     function lc() {
                         document.getElementById("overlay").style.display = "block";
                         setTimeout(function () {
-                            if (confirm("DANGER! \nThis action will Purge all SORMAS Infrastructure Data already on the Adapter and reimport it afresh. \nDo you want to do that?")) {
+                            if (confirm("DANGER! \nThis action will Purge all SODIT Infrastructure Data already on the Adapter and reimport it afresh. \nDo you want to do that?")) {
                                 location.href = '../controllers_jsp/localized.jsp';
                             } else {
                                 document.getElementById("overlay").style.display = "none";
@@ -1896,7 +1896,7 @@
                                     //alert(xhr.responseText);
                                     $('#' + e + 'dfe').css("width", words[0]);
                                     $('#' + e + 'state_g').html(words[0]);
-                                    $('#' + e + '789').html('<a href="#">Total ' + e.replace('dup_', 'Duplicate') + ' at States Level on SORMAS </a> = ' + words[1] + ' | <a href="#">Total Matched</a> = ' + words[2])
+                                    $('#' + e + '789').html('<a href="#">Total ' + e.replace('dup_', 'Duplicate') + ' at States Level on SODIT </a> = ' + words[1] + ' | <a href="#">Total Matched</a> = ' + words[2])
 
                                     $("#state_g_").addClass("locked_" + words[2]);
                                     $('#' + e + 'state_x').html(wordsx);
@@ -1938,7 +1938,7 @@
 
                                     $('#' + gh[1] + 'dfe_lga').css("width", words[0]);
                                     $('#' + gh[1] + 'lga_g').html(words[0]);
-                                    $('#' + gh[1] + '789_lga').html('<a href="#">Total LGAs for ' + gh[2] + ' on SORMAS </a> = ' + words[1] + ' | <a href="#"> Total LGAs from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
+                                    $('#' + gh[1] + '789_lga').html('<a href="#">Total LGAs for ' + gh[2] + ' on SODIT </a> = ' + words[1] + ' | <a href="#"> Total LGAs from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
                                     $('#lga').html(wordsx);
 
                                     $('#' + gh[1] + 'lga_g_').addClass("locked_" + words[2]);
@@ -1965,7 +1965,7 @@
                                     const wordsx = xhr.responseText.split(',@@@');
                                     $('#' + gh[1] + 'dfe_ward').css("width", words[0]);
                                     $('#' + gh[1] + 'ward_g').html(words[0]);
-                                    $('#' + gh[1] + '789_ward').html('<a href="#">Total Wards for ' + gh[2] + ' on SORMAS </a> = ' + words[1] + ' | <a href="#"> Total Wards from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
+                                    $('#' + gh[1] + '789_ward').html('<a href="#">Total Wards for ' + gh[2] + ' on SODIT </a> = ' + words[1] + ' | <a href="#"> Total Wards from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
                                     $('#ward').html(wordsx);
 
                                     $('#' + gh[1] + 'ward_g_').addClass("locked_" + words[2]);
@@ -1994,7 +1994,7 @@
                                     const wordsx = xhr.responseText.split(',@@@');
                                     $('#' + gh[1] + 'dfe_hfd').css("width", words[0]);
                                     $('#' + gh[1] + 'hf_g').html(words[0]);
-                                    $('#' + gh[1] + '789_hf').html('<a href="#">Total Health Facility for ' + gh[2] + ' on SORMAS </a> = ' + words[1] + ' | <a href="#"> Total HFs from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
+                                    $('#' + gh[1] + '789_hf').html('<a href="#">Total Health Facility for ' + gh[2] + ' on SODIT </a> = ' + words[1] + ' | <a href="#"> Total HFs from Source Server</a> = ' + words[2] + ' | <a href="#">Total ' + gh[1].replace('dup_', 'Duplicates ') + 'Matched</a> = ' + words[3])
                                     $('#hf').html(wordsx);
 
                                     $('#' + gh[1] + 'hf_g_').addClass("locked_" + words[2]);
